@@ -323,16 +323,15 @@ p{
     height: 35px;
     padding: 3px 15px;
     margin: 15px;
-    box-shadow: 0 0 3px rgba(12, 202, 74, 0.4);
-    border-radius: .5rem;
+    box-shadow: 0 1px .4rem var(--color-light);
 
 }
 .inputs input::placeholder{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
+    color: black;
 }
 textarea{
-    border-radius: .5rem;
     height: 100px;
     width: 300px;
     resize: none;
@@ -341,7 +340,7 @@ textarea{
     background: #fff;
     padding: 3px 15px;
     margin: 15px;
-    box-shadow: 0 0 3px rgba(12, 202, 74, 0.4);
+    box-shadow: 0 0 0.4rem var(--color-light);
 }
 .submit-btn{
     background: rgb(6, 187, 118);
@@ -365,6 +364,45 @@ textarea{
     background: rgba(255,255,255,0.7);
     padding: 3rem 3rem 1rem 3rem;
 }
+.starting{
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-foothead ul{
+    list-style-type: none;
+}
+.main-foothead ul li a{
+    text-decoration: none;
+    color: rgb(20, 0, 0);
+}
+.part-one{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.part-one input[type="email"]{
+    outline: none;
+    border: none;
+    background:rgba(255,255,255,0.4);
+    width: 300px;
+    height: 30px;
+    padding: 3px 15px;
+    box-shadow: var(--box-shadow-div);
+    
+}
+.part-one input[type="submit"]{
+    height: 35px;
+    padding: 3px 10px;
+    outline: none;
+    width: 150px;
+    margin-top: 10px;
+    background:#0cca4a;
+    color: #f2f2f2;
+    border:none;
+    font-weight: 600;
+    box-shadow:0 0 .4rem var(--color-light)
+}
+
 .main-foothead .ended{
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
