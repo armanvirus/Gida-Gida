@@ -41,6 +41,34 @@ p{
     line-height: 1.5;
     color: rgb(20, 0, 0);
 }
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style-type: none;
+}
+.navigations, header{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    z-index: 50;
+    background: transparent;
+    padding: 1rem 0;
+}
+.navigations ul{
+    display: flex;
+    gap: 10px;
+    font-family: agency fb;
+    font-weight: 600;
+    font-size: 20px;
+}
+.navigations ul li a{
+    color:#fff;
+    padding: 3px 15px;
+    display: inline-block;
+}
 .hero{
     display: flex;
     width: 100vw;
@@ -111,7 +139,7 @@ p{
 }
 .hero img{
     width: 100vw;
-    height:90vh;
+    height:105vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -123,7 +151,7 @@ p{
     left: 0;
     background:rgba(132,139,200,0.90);
     width: 100vw;
-    height: 90vh;
+    height:105vh;
 }
 .kuse{
     width: 100%;
