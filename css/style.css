@@ -61,13 +61,29 @@ p{
     color: var(--color-white);
 }
 .hero-text{
-    width: 380px;
-    text-align: center;
+    width:500px;
+    text-align:left;
 }
-
+.entry-head{
+    margin-bottom: 1rem;
+    font-weight: 400;
+    font-family:Georgia;
+    font-size: 20px;
+    color: #41f1b6;
+    font-style: italic;
+}
+.entry-head span{
+    font-weight: 600;
+    font-size:40px;
+    font-style: oblique;
+    font-family:roboto;
+    color: #fff;
+}
 .hero-text p{
-    color: #f2f2f2;
+    color: #fff;
     text-align: left;
+    font-family: montserrat;
+    line-height: 2;
 }
 
 .decos{
@@ -105,7 +121,7 @@ p{
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, .98);
+    background:rgba(132,139,200,0.90);
     width: 100vw;
     height: 90vh;
 }
@@ -118,7 +134,7 @@ p{
 }
 .kuse .achieve{
     transform: translateY(-50px);
-    color: #f2f2f2;
+    color: #fff;
 }
 .in-figure{
     display: flex;
@@ -302,6 +318,7 @@ p{
     align-items: center;
     justify-content: center;
     padding: 3rem 0;
+    box-shadow: inset 0 0 .4rem var(--color-light);
 }
 #contact-form{
     display: flex;
@@ -318,7 +335,7 @@ p{
 .inputs input{
     outline: none;
     border: none;
-    background: #fff;
+    background:rgba(255,255,255,.6);
     width: 300px;
     height: 35px;
     padding: 3px 15px;
@@ -337,7 +354,7 @@ textarea{
     resize: none;
     outline: none;
     border: none;
-    background: #fff;
+    background:rgba(255,255,255,.6);
     padding: 3px 15px;
     margin: 15px;
     box-shadow: 0 0 0.4rem var(--color-light);
@@ -366,24 +383,39 @@ textarea{
 }
 .starting{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-direction: row-reverse;
 }
 .main-foothead ul{
     list-style-type: none;
 }
 .main-foothead ul li a{
     text-decoration: none;
+    display: inline-block;
     color: rgb(20, 0, 0);
+}
+.nav-footer ul li, .calls p {
+    margin-bottom:5px;
+    padding: 3px;
+    font-size: 14px;
+    color: rgb(20, 0, 20);
+    font-family:Arial, Helvetica, sans-serif;
+
 }
 .part-one{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.part-one p{
+    margin-bottom: 5px;
+    color: rgb(20, 0, 20);
 }
 .part-one input[type="email"]{
     outline: none;
     border: none;
-    background:rgba(255,255,255,0.4);
+    background:rgba(49, 13, 13, 0.03);
     width: 300px;
     height: 30px;
     padding: 3px 15px;
@@ -401,6 +433,23 @@ textarea{
     border:none;
     font-weight: 600;
     box-shadow:0 0 .4rem var(--color-light)
+}
+
+.part-two{
+    padding: 2rem 0;
+}
+.part-two p{
+    margin-bottom:5px;
+    color: rgb(20, 0, 20);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.social-handles a{
+    text-decoration: none;
+    color:rgb(20, 0, 20);
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px;
+    margin-right: 5px;
 }
 
 .main-foothead .ended{
