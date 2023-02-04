@@ -4,7 +4,7 @@ const express = require('express'),
       mongoose = require('mongoose'),
       app = express(),
       path = require('path'),
-      uri = 'mongodb://localhost/gida_gida',
+      uri = 'mongodb://127.0.0.1:27017/gida_gida',
       applicants = require('./db/Applicants')
       PORT = process.env.PORT || 8000;
 
@@ -36,7 +36,7 @@ const express = require('express'),
       });
 
       app.get('/apply', (req,res)=>{
-        res.send("<h1>Hello Gida gida applier</h1>")
+        res.render('apply')
         });
 
         app.post('/apply', (req,res)=>{

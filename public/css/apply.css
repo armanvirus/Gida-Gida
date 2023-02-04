@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.whole_container, .dula{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh;
+}
+.whole_container .bg{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100Vw;
+    height: 100vh;
+    z-index:-5;
+}
+.whole_container .bg img{
+    width: 100%;
+    height:auto;
+}
+.dula > h2{
+    margin-bottom: 2rem;
+    font-family: poppins;
+    font-weight: 500;
+}
+.dula{
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background:rgba(191,191,191,0.9);
+}
+#apply_form > div:first-child{
+    display: flex;
+    align-items: flex-start;
+    gap:3rem;
+    justify-content:space-around;
+}
+.left_part input{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background:rgba(242,242,242,.5);
+    display: block;
+    width: 300px;
+    height: 35px;
+    padding: 3px 15px;
+    margin: 1rem .5rem;
+    font-family: poppins;
+    box-shadow: var(--box-shadow-div);
+}
+input::placeholder{
+    color: #111;
+    font-weight: 500;
+    font-family: arial;
+    background:transparent;
+}
+
+.right_part select{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background:rgba(242,242,242,.5);
+    display: block;
+    width: 300px;
+    height: 35px;
+    padding: 3px 15px;
+    margin: 1rem .5rem;
+    box-shadow: var(--box-shadow-div);
+}
+.right_part h4{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 1rem .5rem;
+    font-weight: 500;
+
+}
+.submission{
+    margin:0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.submission p{
+    max-width: 300px;
+    align-self: flex-start;
+    margin-left: 10px;
+    color: #04481b;
+}
+
+.submission input{
+    background: rgb(6, 187, 118);
+    color: var(--color-white);
+    font-family: poppins;
+    display: inline-block;
+    padding: 3px 30px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    height: 35px;
+    cursor: pointer;
+    width: 48%;
+    color: #feffef;
+    font-weight: 500;
+    box-shadow: 0 0 3px rgba(12,202,74, .3);
+    border-radius: 5px;
+}
+
+@media(max-width:650px){
+    #apply_form > div:first-child{
+        flex-direction: column;
+    }
+    .whole_container .bg img{
+        position: fixed;
+        top: 25%;
+    }
+    .dula{
+        height: 100%;
+        padding: 3rem .5rem
+    }
+    .left_part{
+        width: 100%;
+    }
+    .right_part select, .left_part input{
+        width: 100%;
+    }
+    .submission input{
+        width: 98%;
+    }
+
+}
