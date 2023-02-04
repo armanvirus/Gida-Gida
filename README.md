@@ -1,0 +1,1 @@
+# Gida-Gida a site for monitoring and applying a Gombe state Goververnment skill aquisations programmes
